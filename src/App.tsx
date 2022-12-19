@@ -16,9 +16,9 @@ function App() {
     }, 1000);
   };
 
-  // useEffect(() => {
-  //   handleGeneratePassword();
-  // }, []);
+  useEffect(() => {
+    handleGeneratePassword();
+  }, []);
 
   const handleGeneratePassword = () => {
     var length = input,
