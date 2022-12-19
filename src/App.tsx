@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import { Container } from "react-bootstrap";
@@ -15,6 +15,10 @@ function App() {
       e.target.innerText = "Copy";
     }, 1000);
   };
+
+  // useEffect(() => {
+  //   handleGeneratePassword();
+  // }, []);
 
   const handleGeneratePassword = () => {
     var length = input,
